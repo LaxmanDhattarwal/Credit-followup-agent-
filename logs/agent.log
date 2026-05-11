@@ -3,3 +3,859 @@
 2026-05-11 17:07:02,059 | INFO     | agent | Mode: DRY RUN  |  Model: llama-3.3-70b-versatile
 2026-05-11 17:07:02,059 | INFO     | agent | ============================================================
 2026-05-11 17:07:02,060 | ERROR    | agent | Failed to load data: [Errno 2] No such file or directory: 'sample_data.csv'
+2026-05-11 17:56:57,557 | INFO     | agent | ============================================================
+2026-05-11 17:56:57,558 | INFO     | agent | Credit Follow-Up Agent  |  Run ID: 285817d0
+2026-05-11 17:56:57,560 | INFO     | agent | Mode: DRY RUN  |  Model: llama-3.3-70b-versatile
+2026-05-11 17:56:57,560 | INFO     | agent | ============================================================
+2026-05-11 17:56:57,569 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:56:57,839 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:56:57,858 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:56:58,281 | INFO     | agent | [GENERATING] INV-2024-001 | Rajesh Kapoor | Stage 2
+2026-05-11 17:56:59,854 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:56:59,857 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:00,970 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 17:57:00,984 | INFO     | email_generator | Generated | INV-2024-001 | Stage 2 | Polite but Firm | to: r***@kapoorindustries.com
+2026-05-11 17:57:00,984 | INFO     | email_sender | [DRY RUN] Would send to raje*** | Subject: Overdue Payment: INV-2024-001 for Kapoor Industries Ltd
+2026-05-11 17:57:00,996 | INFO     | audit_logger | [AUDIT] INV-2024-001 | DRY_RUN | Polite but Firm | r***@kapoorindustries.com
+2026-05-11 17:57:00,997 | INFO     | agent | [GENERATING] INV-2024-002 | Priya Sharma | Stage 3
+2026-05-11 17:57:01,730 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 17:57:01,731 | INFO     | email_generator | Generated | INV-2024-002 | Stage 3 | Formal & Serious | to: p***@sharmatech.in
+2026-05-11 17:57:01,731 | INFO     | email_sender | [DRY RUN] Would send to priy*** | Subject: Overdue Payment: INV-2024-002 for Sharma Tech Solutions
+2026-05-11 17:57:01,744 | INFO     | audit_logger | [AUDIT] INV-2024-002 | DRY_RUN | Formal & Serious | p***@sharmatech.in
+2026-05-11 17:57:01,748 | INFO     | agent | [GENERATING] INV-2024-003 | Amit Verma | Stage 4
+2026-05-11 17:57:02,130 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:02,167 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:02,510 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 17:57:02,512 | INFO     | email_generator | Generated | INV-2024-003 | Stage 4 | Stern & Urgent | to: a***@vermaexports.com
+2026-05-11 17:57:02,512 | INFO     | email_sender | [DRY RUN] Would send to amit*** | Subject: OVERDUE: INV-2024-003 - Final Reminder for Immediate Payment
+2026-05-11 17:57:02,530 | INFO     | audit_logger | [AUDIT] INV-2024-003 | DRY_RUN | Stern & Urgent | a***@vermaexports.com
+2026-05-11 17:57:02,532 | WARNING  | agent | [ESCALATED] INV-2024-004  (31 days)  → Finance/Legal review
+2026-05-11 17:57:02,546 | WARNING  | audit_logger | [ESCALATED] INV-2024-004 | 31 days overdue
+2026-05-11 17:57:02,547 | INFO     | agent | [GENERATING] INV-2024-005 | Vikram Singh | Stage 1
+2026-05-11 17:57:03,356 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 17:57:03,358 | INFO     | email_generator | Generated | INV-2024-005 | Stage 1 | Warm & Friendly | to: v***@singhassoc.com
+2026-05-11 17:57:03,359 | INFO     | email_sender | [DRY RUN] Would send to vikr*** | Subject: Overdue Payment Reminder for INV-2024-005
+2026-05-11 17:57:03,835 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:03,837 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:03,855 | INFO     | audit_logger | [AUDIT] INV-2024-005 | DRY_RUN | Warm & Friendly | v***@singhassoc.com
+2026-05-11 17:57:03,856 | WARNING  | agent | [ESCALATED] INV-2024-006  (44 days)  → Finance/Legal review
+2026-05-11 17:57:04,163 | WARNING  | audit_logger | [ESCALATED] INV-2024-006 | 44 days overdue
+2026-05-11 17:57:04,164 | WARNING  | agent | [ESCALATED] INV-2024-007  (36 days)  → Finance/Legal review
+2026-05-11 17:57:04,688 | WARNING  | audit_logger | [ESCALATED] INV-2024-007 | 36 days overdue
+2026-05-11 17:57:04,688 | INFO     | agent | [GENERATING] INV-2024-008 | Deepa Krishnan | Stage 1
+2026-05-11 17:57:05,485 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 17:57:05,487 | INFO     | email_generator | Generated | INV-2024-008 | Stage 1 | Warm & Friendly | to: d***@krishnantextiles.com
+2026-05-11 17:57:05,487 | INFO     | email_sender | [DRY RUN] Would send to deep*** | Subject: Overdue Payment Reminder for INV-2024-008
+2026-05-11 17:57:05,504 | INFO     | audit_logger | [AUDIT] INV-2024-008 | DRY_RUN | Warm & Friendly | d***@krishnantextiles.com
+2026-05-11 17:57:05,515 | INFO     | agent | Audit stats: {'DRY_RUN': 5, 'ESCALATED': 3}
+2026-05-11 17:57:06,142 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:06,196 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:16,591 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:16,646 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:27,551 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:27,600 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:36,596 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:36,627 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:46,674 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:46,779 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:47,076 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:47,159 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:47,270 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:47,362 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:56,310 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:56,354 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:56,656 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:57:56,688 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:06,614 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:06,704 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:06,749 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:06,769 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:16,616 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:16,668 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:16,731 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:16,749 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:26,344 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:26,358 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:27,232 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:27,274 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:36,578 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:36,613 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:37,237 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:37,265 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:46,586 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:46,628 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:47,239 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:47,270 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:56,596 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:56,625 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:57,226 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:58:57,259 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:06,591 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:06,625 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:07,227 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:07,256 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:16,589 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:16,620 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:17,220 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:17,248 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:26,593 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:26,634 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:27,354 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:27,420 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:36,603 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:36,652 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:37,332 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:37,437 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:46,600 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:46,696 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:47,249 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:47,280 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:56,611 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:56,667 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:57,251 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 17:59:57,297 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:06,597 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:06,661 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:07,241 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:07,289 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:16,619 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:16,687 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:17,250 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:17,322 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:26,590 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:26,630 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:27,238 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:27,269 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:36,588 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:36,630 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:40,270 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:40,352 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:46,603 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:46,662 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:56,611 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:00:56,679 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:06,604 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:06,670 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:16,598 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:16,663 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:26,606 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:26,668 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:36,590 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:36,633 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:40,237 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:40,280 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:46,606 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:46,688 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:56,583 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:01:56,618 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:06,578 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:06,612 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:16,597 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:16,629 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:26,581 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:26,609 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:36,584 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:36,622 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:40,554 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:40,604 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:46,600 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:46,640 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:56,597 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:02:56,637 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:06,622 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:06,699 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:16,589 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:16,617 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:26,588 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:26,623 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:36,598 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:36,635 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:40,272 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:40,306 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:46,653 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:46,736 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:56,616 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:03:56,671 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:06,602 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:06,737 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:16,595 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:16,652 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:26,604 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:26,679 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:36,606 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:36,657 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:40,581 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:40,629 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:46,627 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:46,693 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:56,613 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:04:56,659 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:06,591 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:06,638 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:16,617 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:16,685 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:26,646 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:26,708 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:36,603 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:36,674 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:40,298 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:40,363 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:46,617 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:46,685 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:56,328 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:05:56,355 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:06,617 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:06,669 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:16,603 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:16,655 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:26,597 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:26,648 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:36,599 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:36,646 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:40,550 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:40,613 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:46,599 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:46,647 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:56,597 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:06:56,647 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:06,612 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:06,665 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:16,603 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:16,652 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:26,590 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:26,653 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:36,594 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:36,638 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:40,274 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:40,317 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:46,629 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:46,719 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:56,595 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:07:56,661 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:06,614 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:06,709 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:16,621 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:16,695 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:26,618 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:26,689 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:36,605 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:36,673 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:40,550 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:40,612 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:46,607 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:46,672 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:56,608 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:08:56,677 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:06,618 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:06,689 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:16,606 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:16,670 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:26,595 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:26,643 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:36,612 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:36,688 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:40,269 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:40,290 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:46,596 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:46,646 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:56,611 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:09:56,658 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:06,603 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:06,658 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:16,616 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:16,673 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:26,617 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:26,694 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:36,609 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:36,661 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:40,548 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:40,595 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:46,591 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:46,631 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:57,565 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:10:57,629 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:11:07,264 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:11:07,293 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:11:17,548 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:11:17,602 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:11:27,545 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:11:27,601 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:11:37,287 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:11:37,303 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:11:40,262 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:11:40,288 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:12:40,564 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:12:40,577 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:12:40,641 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:12:40,693 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:13:40,275 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:13:40,277 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:13:40,555 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:13:40,616 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:14:40,257 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:14:40,288 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:14:40,541 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:14:40,595 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:15:40,251 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:15:40,287 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:15:40,566 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:15:40,706 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:16:40,589 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:16:40,592 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:16:40,691 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:16:40,722 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:17:40,308 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:17:40,376 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:17:40,585 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:17:40,685 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:18:40,299 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:18:40,401 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:18:40,596 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:18:40,698 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:19:40,336 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:19:40,371 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:19:40,590 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:19:40,703 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:20:40,294 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:20:40,370 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:20:40,586 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:20:40,695 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:21:38,929 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:21:38,971 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:21:40,277 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:21:40,329 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:21:46,310 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:21:46,329 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:21:56,608 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:21:56,643 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:06,304 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:06,324 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:17,582 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:17,667 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:27,315 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:27,353 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:37,577 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:37,673 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:40,272 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:40,332 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:47,269 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:47,327 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:56,587 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:56,653 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:57,048 | INFO     | agent | ============================================================
+2026-05-11 18:22:57,049 | INFO     | agent | Credit Follow-Up Agent  |  Run ID: b4e946f8
+2026-05-11 18:22:57,049 | INFO     | agent | Mode: DRY RUN  |  Model: llama-3.3-70b-versatile
+2026-05-11 18:22:57,049 | INFO     | agent | ============================================================
+2026-05-11 18:22:57,064 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:57,808 | INFO     | agent | [GENERATING] INV-2024-001 | Rajesh Kapoor | Stage 2
+2026-05-11 18:22:58,845 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:22:58,888 | INFO     | email_generator | Generated | INV-2024-001 | Stage 2 | Polite but Firm | to: r***@kapoorindustries.com
+2026-05-11 18:22:58,889 | INFO     | email_sender | [DRY RUN] Would send to raje*** | Subject: Overdue Payment: INV-2024-001 for Kapoor Industries Ltd
+2026-05-11 18:22:58,908 | INFO     | audit_logger | [AUDIT] INV-2024-001 | DRY_RUN | Polite but Firm | r***@kapoorindustries.com
+2026-05-11 18:22:58,910 | INFO     | agent | [GENERATING] INV-2024-002 | Priya Sharma | Stage 3
+2026-05-11 18:22:59,444 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:59,490 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:22:59,610 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:22:59,612 | INFO     | email_generator | Generated | INV-2024-002 | Stage 3 | Formal & Serious | to: p***@sharmatech.in
+2026-05-11 18:22:59,612 | INFO     | email_sender | [DRY RUN] Would send to priy*** | Subject: Overdue Payment: INV-2024-002 for Rs.128,500
+2026-05-11 18:22:59,631 | INFO     | audit_logger | [AUDIT] INV-2024-002 | DRY_RUN | Formal & Serious | p***@sharmatech.in
+2026-05-11 18:22:59,634 | INFO     | agent | [GENERATING] INV-2024-003 | Amit Verma | Stage 4
+2026-05-11 18:23:00,360 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:23:00,362 | INFO     | email_generator | Generated | INV-2024-003 | Stage 4 | Stern & Urgent | to: a***@vermaexports.com
+2026-05-11 18:23:00,362 | INFO     | email_sender | [DRY RUN] Would send to amit*** | Subject: Final Overdue Payment Notice for INV-2024-003
+2026-05-11 18:23:00,378 | INFO     | audit_logger | [AUDIT] INV-2024-003 | DRY_RUN | Stern & Urgent | a***@vermaexports.com
+2026-05-11 18:23:00,380 | WARNING  | agent | [ESCALATED] INV-2024-004  (31 days)  → Finance/Legal review
+2026-05-11 18:23:00,402 | WARNING  | audit_logger | [ESCALATED] INV-2024-004 | 31 days overdue
+2026-05-11 18:23:00,405 | INFO     | agent | [GENERATING] INV-2024-005 | Vikram Singh | Stage 1
+2026-05-11 18:23:01,147 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:01,156 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:01,239 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:23:01,240 | INFO     | email_generator | Generated | INV-2024-005 | Stage 1 | Warm & Friendly | to: v***@singhassoc.com
+2026-05-11 18:23:01,240 | INFO     | email_sender | [DRY RUN] Would send to vikr*** | Subject: Friendly Reminder: Overdue Payment for INV-2024-005
+2026-05-11 18:23:01,255 | INFO     | audit_logger | [AUDIT] INV-2024-005 | DRY_RUN | Warm & Friendly | v***@singhassoc.com
+2026-05-11 18:23:01,258 | WARNING  | agent | [ESCALATED] INV-2024-006  (44 days)  → Finance/Legal review
+2026-05-11 18:23:01,275 | WARNING  | audit_logger | [ESCALATED] INV-2024-006 | 44 days overdue
+2026-05-11 18:23:01,276 | WARNING  | agent | [ESCALATED] INV-2024-007  (36 days)  → Finance/Legal review
+2026-05-11 18:23:01,292 | WARNING  | audit_logger | [ESCALATED] INV-2024-007 | 36 days overdue
+2026-05-11 18:23:01,293 | INFO     | agent | [GENERATING] INV-2024-008 | Deepa Krishnan | Stage 1
+2026-05-11 18:23:02,146 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:23:02,147 | INFO     | email_generator | Generated | INV-2024-008 | Stage 1 | Warm & Friendly | to: d***@krishnantextiles.com
+2026-05-11 18:23:02,147 | INFO     | email_sender | [DRY RUN] Would send to deep*** | Subject: Overdue Payment Reminder for INV-2024-008
+2026-05-11 18:23:02,162 | INFO     | audit_logger | [AUDIT] INV-2024-008 | DRY_RUN | Warm & Friendly | d***@krishnantextiles.com
+2026-05-11 18:23:02,177 | INFO     | agent | Audit stats: {'DRY_RUN': 10, 'ESCALATED': 6}
+2026-05-11 18:23:03,164 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:03,181 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:13,607 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:13,654 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:21,110 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:21,155 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:21,570 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:21,605 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:21,811 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:21,815 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:22,038 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:22,041 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:22,215 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:22,229 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:22,398 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:22,406 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:22,636 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:22,667 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:22,840 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:22,847 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:23,032 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:23,033 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:23,324 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:23,330 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:33,650 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:33,744 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:40,290 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:40,364 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:44,579 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:44,680 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:54,569 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:23:54,668 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:04,580 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:04,672 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:14,585 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:14,671 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:24,542 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:24,611 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:34,566 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:34,662 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:38,764 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:38,807 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:39,538 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:39,562 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:40,118 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:40,125 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:40,249 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:40,288 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:40,372 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:40,374 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:40,554 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:40,565 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:40,764 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:40,767 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:41,555 | INFO     | agent | ============================================================
+2026-05-11 18:24:41,556 | INFO     | agent | Credit Follow-Up Agent  |  Run ID: 9d0298c8
+2026-05-11 18:24:41,556 | INFO     | agent | Mode: LIVE SEND  |  Model: llama-3.3-70b-versatile
+2026-05-11 18:24:41,557 | INFO     | agent | ============================================================
+2026-05-11 18:24:41,571 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:42,134 | INFO     | agent | [GENERATING] INV-2024-001 | Rajesh Kapoor | Stage 2
+2026-05-11 18:24:42,926 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:24:42,929 | INFO     | email_generator | Generated | INV-2024-001 | Stage 2 | Polite but Firm | to: r***@kapoorindustries.com
+2026-05-11 18:24:42,929 | INFO     | email_sender | [DRY RUN] Would send to raje*** | Subject: Overdue Payment Reminder for Invoice INV-2024-001
+2026-05-11 18:24:42,943 | INFO     | audit_logger | [AUDIT] INV-2024-001 | DRY_RUN | Polite but Firm | r***@kapoorindustries.com
+2026-05-11 18:24:42,946 | INFO     | agent | [GENERATING] INV-2024-002 | Priya Sharma | Stage 3
+2026-05-11 18:24:43,637 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:43,651 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:43,695 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:24:43,698 | INFO     | email_generator | Generated | INV-2024-002 | Stage 3 | Formal & Serious | to: p***@sharmatech.in
+2026-05-11 18:24:43,698 | INFO     | email_sender | [DRY RUN] Would send to priy*** | Subject: Overdue Payment for INV-2024-002: Immediate Attention Requir
+2026-05-11 18:24:43,723 | INFO     | audit_logger | [AUDIT] INV-2024-002 | DRY_RUN | Formal & Serious | p***@sharmatech.in
+2026-05-11 18:24:43,725 | INFO     | agent | [GENERATING] INV-2024-003 | Amit Verma | Stage 4
+2026-05-11 18:24:44,449 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:24:44,453 | INFO     | email_generator | Generated | INV-2024-003 | Stage 4 | Stern & Urgent | to: a***@vermaexports.com
+2026-05-11 18:24:44,454 | INFO     | email_sender | [DRY RUN] Would send to amit*** | Subject: OVERDUE: IMMEDIATE ACTION REQUIRED FOR INV-2024-003
+2026-05-11 18:24:44,471 | INFO     | audit_logger | [AUDIT] INV-2024-003 | DRY_RUN | Stern & Urgent | a***@vermaexports.com
+2026-05-11 18:24:44,472 | WARNING  | agent | [ESCALATED] INV-2024-004  (31 days)  → Finance/Legal review
+2026-05-11 18:24:44,485 | WARNING  | audit_logger | [ESCALATED] INV-2024-004 | 31 days overdue
+2026-05-11 18:24:44,486 | INFO     | agent | [GENERATING] INV-2024-005 | Vikram Singh | Stage 1
+2026-05-11 18:24:45,223 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:24:45,226 | INFO     | email_generator | Generated | INV-2024-005 | Stage 1 | Warm & Friendly | to: v***@singhassoc.com
+2026-05-11 18:24:45,227 | INFO     | email_sender | [DRY RUN] Would send to vikr*** | Subject: Overdue Payment Reminder for INV-2024-005
+2026-05-11 18:24:45,241 | INFO     | audit_logger | [AUDIT] INV-2024-005 | DRY_RUN | Warm & Friendly | v***@singhassoc.com
+2026-05-11 18:24:45,246 | WARNING  | agent | [ESCALATED] INV-2024-006  (44 days)  → Finance/Legal review
+2026-05-11 18:24:45,260 | WARNING  | audit_logger | [ESCALATED] INV-2024-006 | 44 days overdue
+2026-05-11 18:24:45,263 | WARNING  | agent | [ESCALATED] INV-2024-007  (36 days)  → Finance/Legal review
+2026-05-11 18:24:45,278 | WARNING  | audit_logger | [ESCALATED] INV-2024-007 | 36 days overdue
+2026-05-11 18:24:45,280 | INFO     | agent | [GENERATING] INV-2024-008 | Deepa Krishnan | Stage 1
+2026-05-11 18:24:45,640 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:45,660 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:45,960 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:24:45,962 | INFO     | email_generator | Generated | INV-2024-008 | Stage 1 | Warm & Friendly | to: d***@krishnantextiles.com
+2026-05-11 18:24:45,962 | INFO     | email_sender | [DRY RUN] Would send to deep*** | Subject: Overdue Payment Reminder for INV-2024-008
+2026-05-11 18:24:45,975 | INFO     | audit_logger | [AUDIT] INV-2024-008 | DRY_RUN | Warm & Friendly | d***@krishnantextiles.com
+2026-05-11 18:24:45,984 | INFO     | agent | Audit stats: {'DRY_RUN': 15, 'ESCALATED': 9}
+2026-05-11 18:24:47,627 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:47,639 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:58,036 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:24:58,079 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:08,039 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:08,080 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:18,066 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:18,126 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:28,564 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:28,648 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:38,565 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:38,671 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:40,294 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:40,349 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:48,581 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:48,669 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:57,747 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:25:57,761 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:08,037 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:08,079 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:17,763 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:17,765 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:28,056 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:28,099 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:37,757 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:37,777 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:40,245 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:40,276 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:48,051 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:48,088 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:57,755 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:26:57,756 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:08,049 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:08,084 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:17,751 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:17,764 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:28,043 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:28,079 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:37,753 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:37,787 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:40,258 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:40,286 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:48,053 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:48,091 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:57,753 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:27:57,790 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:08,046 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:08,088 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:17,738 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:17,762 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:28,045 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:28,095 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:37,747 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:37,765 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:40,253 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:40,282 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:48,045 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:48,088 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:57,757 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:28:57,772 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:08,041 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:08,087 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:18,580 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:18,644 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:28,542 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:28,596 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:37,783 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:37,795 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:40,247 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:40,282 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:48,542 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:48,590 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:58,584 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:29:58,720 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:30:08,589 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:30:08,703 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:30:18,576 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:30:18,686 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:30:28,560 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:30:28,669 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:30:38,568 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:30:38,683 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:31:40,956 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:31:41,092 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:32:37,560 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:32:37,646 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:32:37,795 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:32:37,823 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:32:48,043 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:32:48,085 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:32:57,768 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:32:57,787 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:08,231 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:08,555 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:18,524 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:18,567 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:28,041 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:28,089 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:30,578 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:30,686 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:30,772 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:30,839 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:40,285 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:40,312 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:50,574 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:50,624 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:53,006 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:53,035 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:53,085 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:53,157 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:57,424 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:57,478 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:57,522 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:33:57,575 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:01,280 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:01,284 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:01,351 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:01,451 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:11,525 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:11,563 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:21,535 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:21,577 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:30,690 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:30,783 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:30,865 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:30,963 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:36,695 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:36,763 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:36,824 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:36,881 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:47,517 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:47,565 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:57,557 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:34:57,653 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:07,572 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:07,675 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:17,899 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:17,962 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:27,574 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:27,700 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:37,539 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:37,592 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:46,696 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:46,734 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:56,727 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:35:56,781 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:07,539 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:07,587 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:17,535 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:17,603 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:22,327 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:22,384 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:22,439 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:22,496 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:23,513 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:23,551 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:23,579 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:23,649 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:26,086 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:26,096 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:26,168 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:26,238 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:36,247 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:36,296 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:46,242 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:46,292 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:56,233 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:36:56,286 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:06,227 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:06,278 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:16,269 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:16,384 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:26,275 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:26,382 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:36,048 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:36,100 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:46,326 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:46,445 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:56,271 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:37:56,385 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:06,273 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:06,379 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:16,272 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:16,402 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:26,314 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:26,572 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:36,299 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:36,467 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:36,872 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:37,057 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:37,168 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:37,368 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:46,302 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:46,440 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:47,654 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:47,808 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:56,290 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:56,432 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:57,344 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:38:57,387 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:06,266 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:06,374 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:07,263 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:07,365 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:16,276 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:16,384 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:17,278 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:17,360 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:26,277 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:26,405 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:27,261 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:27,374 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:36,275 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:36,396 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:37,300 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:37,352 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:46,300 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:46,455 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:56,291 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:39:56,419 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:06,293 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:06,426 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:16,276 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:16,384 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:26,275 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:26,407 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:36,352 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:36,564 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:40,573 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:40,714 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:46,267 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:46,390 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:56,281 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:40:56,408 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:06,036 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:06,124 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:16,281 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:16,397 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:26,037 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:26,077 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:36,290 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:36,419 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:40,305 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:40,308 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:46,273 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:46,405 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:56,260 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:41:56,380 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:06,279 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:06,399 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:16,277 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:16,398 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:26,277 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:26,404 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:36,023 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:36,069 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:40,255 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:40,363 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:46,263 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:46,379 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:56,045 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:42:56,086 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:06,288 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:06,411 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:16,280 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:16,386 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:25,998 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:26,059 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:36,288 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:36,385 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:40,300 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:40,333 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:46,268 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:46,390 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:56,022 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:43:56,074 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:06,276 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:06,383 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:16,282 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:16,404 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:26,273 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:26,374 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:36,270 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:36,388 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:40,307 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:40,484 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:46,282 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:46,418 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:56,241 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:44:56,281 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:06,225 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:06,270 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:16,234 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:16,285 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:26,252 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:26,337 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:36,315 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:36,443 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:40,294 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:40,376 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:46,283 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:46,407 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:56,270 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:45:56,383 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:12,169 | INFO     | agent | ============================================================
+2026-05-11 18:52:12,170 | INFO     | agent | Credit Follow-Up Agent  |  Run ID: d7e2186c
+2026-05-11 18:52:12,170 | INFO     | agent | Mode: DRY RUN  |  Model: llama-3.3-70b-versatile
+2026-05-11 18:52:12,171 | INFO     | agent | ============================================================
+2026-05-11 18:52:12,186 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:13,173 | INFO     | agent | [GENERATING] INV-2024-001 | Rajesh Kapoor | Stage 2
+2026-05-11 18:52:13,388 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:13,391 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:15,370 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:15,375 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:16,161 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:52:16,185 | INFO     | email_generator | Generated | INV-2024-001 | Stage 2 | Polite but Firm | to: r***@kapoorindustries.com
+2026-05-11 18:52:16,186 | INFO     | email_sender | [DRY RUN] Would send to raje*** | Subject: Overdue Payment for INV-2024-001 - Rajesh Kapoor
+2026-05-11 18:52:16,204 | INFO     | audit_logger | [AUDIT] INV-2024-001 | DRY_RUN | Polite but Firm | r***@kapoorindustries.com
+2026-05-11 18:52:16,205 | INFO     | agent | [GENERATING] INV-2024-002 | Priya Sharma | Stage 3
+2026-05-11 18:52:16,948 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:52:16,950 | INFO     | email_generator | Generated | INV-2024-002 | Stage 3 | Formal & Serious | to: p***@sharmatech.in
+2026-05-11 18:52:16,950 | INFO     | email_sender | [DRY RUN] Would send to priy*** | Subject: Overdue Payment: INV-2024-002 for Rs.128,500
+2026-05-11 18:52:16,967 | INFO     | audit_logger | [AUDIT] INV-2024-002 | DRY_RUN | Formal & Serious | p***@sharmatech.in
+2026-05-11 18:52:16,968 | INFO     | agent | [GENERATING] INV-2024-003 | Amit Verma | Stage 4
+2026-05-11 18:52:17,250 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:17,287 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:17,386 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:17,392 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:17,666 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:52:17,671 | INFO     | email_generator | Generated | INV-2024-003 | Stage 4 | Stern & Urgent | to: a***@vermaexports.com
+2026-05-11 18:52:17,671 | INFO     | email_sender | [DRY RUN] Would send to amit*** | Subject: OVERDUE Invoice INV-2024-003: Immediate Attention Required
+2026-05-11 18:52:17,694 | INFO     | audit_logger | [AUDIT] INV-2024-003 | DRY_RUN | Stern & Urgent | a***@vermaexports.com
+2026-05-11 18:52:17,699 | WARNING  | agent | [ESCALATED] INV-2024-004  (31 days)  → Finance/Legal review
+2026-05-11 18:52:17,720 | WARNING  | audit_logger | [ESCALATED] INV-2024-004 | 31 days overdue
+2026-05-11 18:52:17,720 | INFO     | agent | [GENERATING] INV-2024-005 | Vikram Singh | Stage 1
+2026-05-11 18:52:18,488 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:52:18,491 | INFO     | email_generator | Generated | INV-2024-005 | Stage 1 | Warm & Friendly | to: v***@singhassoc.com
+2026-05-11 18:52:18,492 | INFO     | email_sender | [DRY RUN] Would send to vikr*** | Subject: Friendly Reminder: Overdue Invoice INV-2024-005 for Rs.34,80
+2026-05-11 18:52:18,515 | INFO     | audit_logger | [AUDIT] INV-2024-005 | DRY_RUN | Warm & Friendly | v***@singhassoc.com
+2026-05-11 18:52:18,516 | WARNING  | agent | [ESCALATED] INV-2024-006  (44 days)  → Finance/Legal review
+2026-05-11 18:52:18,531 | WARNING  | audit_logger | [ESCALATED] INV-2024-006 | 44 days overdue
+2026-05-11 18:52:18,532 | WARNING  | agent | [ESCALATED] INV-2024-007  (36 days)  → Finance/Legal review
+2026-05-11 18:52:18,548 | WARNING  | audit_logger | [ESCALATED] INV-2024-007 | 36 days overdue
+2026-05-11 18:52:18,550 | INFO     | agent | [GENERATING] INV-2024-008 | Deepa Krishnan | Stage 1
+2026-05-11 18:52:19,372 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:19,377 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:19,515 | INFO     | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 18:52:19,520 | INFO     | email_generator | Generated | INV-2024-008 | Stage 1 | Warm & Friendly | to: d***@krishnantextiles.com
+2026-05-11 18:52:19,521 | INFO     | email_sender | [DRY RUN] Would send to deep*** | Subject: Overdue Payment Reminder for INV-2024-008
+2026-05-11 18:52:19,545 | INFO     | audit_logger | [AUDIT] INV-2024-008 | DRY_RUN | Warm & Friendly | d***@krishnantextiles.com
+2026-05-11 18:52:19,568 | INFO     | agent | Audit stats: {'DRY_RUN': 20, 'ESCALATED': 12}
+2026-05-11 18:52:20,269 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:20,278 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:21,668 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:21,714 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:31,564 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:31,669 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:32,161 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:32,295 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:41,293 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:41,324 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:42,180 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:42,295 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:51,556 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:51,644 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:52,157 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:52:52,289 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:01,257 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:01,273 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:02,125 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:02,172 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:11,551 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:11,642 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:12,158 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:12,258 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:21,255 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:21,274 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:22,120 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:22,168 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:32,154 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv
+2026-05-11 18:53:32,279 | INFO     | data_ingestion | Loaded 8 overdue invoices from c:\Users\Dell\OneDrive\Desktop\credit_f\credit_agent_with_api (1)\credit_agent\sample_data.csv

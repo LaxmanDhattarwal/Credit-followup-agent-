@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────────────────
+#  Finance Credit Follow-Up Email Agent
+#  requirements.txt  (Groq version)
+# ─────────────────────────────────────────────────────────
+
+# Groq API (OpenAI-compatible client)
+openai>=1.30.0          # used as the Groq SDK client
+groq>=0.9.0             # optional direct SDK; openai client works fine
+
+# Data handling
+pandas>=2.2.0
+openpyxl>=3.1.0         # .xlsx support
+
+# Data validation (structured LLM output)
+pydantic>=2.7.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+
+# Email sending
+sendgrid>=6.11.0        # optional: if using SendGrid
+# smtplib is stdlib — no install needed
+
+# Scheduling
+APScheduler>=3.10.4
+
+# Optional Streamlit dashboard
+streamlit>=1.35.0
+
+# Dev / testing
+pytest>=8.0.0
+pytest-mock>=3.14.0
+black>=24.0.0
+ruff>=0.4.0
+
+# API server (new)
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0

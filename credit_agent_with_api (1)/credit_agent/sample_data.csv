@@ -1,0 +1,9 @@
+invoice_no,client_name,company,amount,currency,due_date,contact_email,follow_up_count,payment_link,account_manager
+INV-2024-001,Rajesh Kapoor,Kapoor Industries Ltd,45000,INR,2026-05-03,rajesh@kapoorindustries.com,0,https://pay.acme.in/INV-2024-001,Ananya Singh
+INV-2024-002,Priya Sharma,Sharma Tech Solutions,128500,INR,2026-04-26,priya@sharmatech.in,1,https://pay.acme.in/INV-2024-002,Ananya Singh
+INV-2024-003,Amit Verma,Verma Exports Pvt Ltd,67200,INR,2026-04-19,amit@vermaexports.com,2,https://pay.acme.in/INV-2024-003,Rohit Mehta
+INV-2024-004,Sunita Mehta,Mehta Group Holdings,210000,INR,2026-04-10,sunita@mehtagroup.com,3,https://pay.acme.in/INV-2024-004,Rohit Mehta
+INV-2024-005,Vikram Singh,Singh & Associates,34800,INR,2026-05-08,vikram@singhassoc.com,0,https://pay.acme.in/INV-2024-005,Ananya Singh
+INV-2024-006,Neha Gupta,Gupta Pharmaceuticals,89000,INR,2026-03-28,neha@guptapharma.in,4,https://pay.acme.in/INV-2024-006,Priya Kapoor
+INV-2024-007,Arjun Nair,Nair Constructions Co.,156000,INR,2026-04-05,arjun@nairconstructions.com,3,https://pay.acme.in/INV-2024-007,Priya Kapoor
+INV-2024-008,Deepa Krishnan,Krishnan Textiles Mills,52300,INR,2026-05-06,deepa@krishnantextiles.com,1,https://pay.acme.in/INV-2024-008,Rohit Mehta
