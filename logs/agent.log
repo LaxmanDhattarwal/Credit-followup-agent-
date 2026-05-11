@@ -1,0 +1,5 @@
+2026-05-11 17:07:02,059 | INFO     | agent | ============================================================
+2026-05-11 17:07:02,059 | INFO     | agent | Credit Follow-Up Agent  |  Run ID: be3f5090
+2026-05-11 17:07:02,059 | INFO     | agent | Mode: DRY RUN  |  Model: llama-3.3-70b-versatile
+2026-05-11 17:07:02,059 | INFO     | agent | ============================================================
+2026-05-11 17:07:02,060 | ERROR    | agent | Failed to load data: [Errno 2] No such file or directory: 'sample_data.csv'

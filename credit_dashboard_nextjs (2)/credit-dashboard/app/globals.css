@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=DM+Sans:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:         #0a0a0b;
+  --surface:    #111113;
+  --surface-2:  #18181b;
+  --surface-3:  #222226;
+  --border:     #2a2a2f;
+  --border-bright: #3a3a42;
+  --text:       #e4e4e7;
+  --text-muted: #71717a;
+  --text-dim:   #3f3f46;
+  --amber:      #f59e0b;
+  --amber-dim:  #92400e;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar       { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 2px; }
+
+/* Mono data */
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* Noise overlay */
+.noise::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* Glow effect */
+.amber-glow {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.15), 0 0 40px rgba(245, 158, 11, 0.05);
+}
+
+/* Stage badge variants */
+.stage-0 { background: rgba(34,197,94,0.1);  color: #86efac; border-color: rgba(34,197,94,0.2);  }
+.stage-1 { background: rgba(245,158,11,0.1); color: #fcd34d; border-color: rgba(245,158,11,0.2); }
+.stage-2 { background: rgba(249,115,22,0.1); color: #fdba74; border-color: rgba(249,115,22,0.2); }
+.stage-3 { background: rgba(239,68,68,0.12); color: #fca5a5; border-color: rgba(239,68,68,0.2);  }
+.stage-4 { background: rgba(239,68,68,0.18); color: #f87171; border-color: rgba(239,68,68,0.3);  }
+.stage-5 { background: rgba(168,85,247,0.1); color: #c4b5fd; border-color: rgba(168,85,247,0.2); }
+
+@keyframes scanline {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.scanline {
+  position: fixed; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(245,158,11,0.3), transparent);
+  animation: scanline 8s linear infinite;
+  pointer-events: none; z-index: 9999;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; } 50% { opacity: 0; }
+}
+.cursor::after {
+  content: '█'; animation: blink 1s step-end infinite;
+  color: var(--amber); font-size: 0.8em;
+}
